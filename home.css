@@ -202,6 +202,30 @@ div[id]{
 .page1-left{
     width: 50%;
     padding-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page1-left img {
+    width: 320px;
+    height: auto;   
+    object-fit: cover;
+    border-radius: 25px;
+    padding: 8px;
+    
+    /* Gradient frame effect */
+    background: linear-gradient(135deg, rgb(232, 53, 172), #7cf7e3);
+    
+    /* Soft glow */
+    box-shadow: 0 20px 40px rgba(232, 53, 172, 0.3);
+
+    transition: all 0.4s ease;
+}
+
+/* Hover effect */
+.page1-left img:hover {
+    transform: scale(1.15) rotate(-1deg);
+    box-shadow: 0 25px 60px rgba(232, 53, 172, 0.5);
 }
 .page1-right{
     width: 50%;
